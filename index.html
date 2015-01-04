@@ -10,16 +10,10 @@ title: mcjudd
 
 <section>
 	<h2>Blog posts</h2>
-	<p id="archive">
-		<p class="posts">
+	<ul id="archive">
+		<ul class="posts">
 			{% for post in site.posts %}
-			<span>
-				{{ post.date | date_to_string }}
-			</span> 
-			&raquo; <a href="{{ post.url }}">
-			{{ post.title }}
-		</a>
-	</p>
-	{% endfor %}
-</p>
-</section>
+			<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</section>
