@@ -1,12 +1,5 @@
 timezone: America/New_York
-lsi: BOOL
 permalink: /blog/:year/:month/:day/:title
-gems:
-  - jekyll-sitemap
-
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
+auto: true
+pygments: true
+server: true
