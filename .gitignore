@@ -1,1 +1,10 @@
-/_site
+_site/
+.DS_Store
+*.jpg
+*.lock
+*.png
+*.eot
+*.svg
+*.ttf
+*.woff
+*.otf
