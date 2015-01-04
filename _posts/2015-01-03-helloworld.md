@@ -1,6 +1,6 @@
 ---
 title: Hello world
-layout: static
+layout: post
 ---
 
 Hello world! 
