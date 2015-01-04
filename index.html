@@ -37,17 +37,27 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>Welcome to my homepage.</h2>
+							<h2>Welcome to my homepage</h2>
 						</header>
-						<p>I plan to use this space to write about things I'm learning.</p>
+						<p>I plan to use this space to write about things I'm learning. I earned a Masters of Public Health in Global Epidemiology at Emory University's Rollins School of Public Health. I currently work in foodborne disease surveillance at the CDC.</p>
 					</section>
 				
 				<!-- Two -->
 					<section id="two">
 						<header class="major">
-							<h2>About me</h2>
+							<h2>Post archive</h2>
 						</header>
-						<p>I earned a Masters of Public Health in Global Epidemiology at Emory University's Rollins School of Public Health. I currently work in foodborne disease surveillance at the CDC.</p>
+						<ul id="archive">
+						{% for post in site.posts %}
+						  <li class="post-{{ post.category }}">
+						  {% if post.external_url == nil %}
+						    <a href="{{ post.url }}">{{ post.title }}</a><abbr>{{ post.date | date_to_string }}</abbr>
+						  {% else %}
+						    <a href="{{ post.external_url }}">{{ post.title }}</a><abbr>{{ post.date | date_to_string }}</abbr>
+						  {% endif %}
+						  </li>
+						{% endfor %}
+						</ul>
 					</section>
 					
 				<!-- Three -->
