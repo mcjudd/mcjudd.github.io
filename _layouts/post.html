@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
-<section id="post">
-  <h2><a href="{{ page.url }}">
-    {{ page.title }}
-  </a></h2>
-  <section id="date">published {{ page.date | date_to_string }}</section>
-  {{ content }}
-  <hr />
-</section>
+
+<div id="post">
+	<h2>
+		<a href="{{ page.url }}"> {{ page.title }}</a>
+	</h2>
+  <section id="date"> 
+  	Published on {{ page.date | date_to_string }} 
+  </section>
+{{ content }}
+</div>

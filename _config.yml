@@ -1,5 +1,2 @@
 timezone: America/New_York
-permalink: /blog/:year/:month/:day/:title
-auto: true
 pygments: true
-server: true
